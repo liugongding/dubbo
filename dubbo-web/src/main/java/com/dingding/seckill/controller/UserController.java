@@ -1,7 +1,7 @@
-package com.dingding.controller;
+package com.dingding.seckill.controller;
 
-import com.dingding.entity.user.User;
-import com.dingding.service.UserService;
+import com.dingding.seckill.user.User;
+import com.dingding.seckill.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

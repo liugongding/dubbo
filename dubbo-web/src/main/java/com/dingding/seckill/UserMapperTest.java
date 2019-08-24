@@ -1,7 +1,7 @@
-package com.dingding;
+package com.dingding.seckill;
 
-import com.dingding.dal.dao.UserMapper;
-import com.dingding.entity.user.User;
+import com.dingding.seckill.dao.UserMapper;
+import com.dingding.seckill.user.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

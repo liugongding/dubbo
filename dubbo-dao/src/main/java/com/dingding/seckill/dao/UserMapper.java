@@ -1,6 +1,6 @@
-package com.dingding.dal.dao;
+package com.dingding.seckill.dao;
 
-import com.dingding.entity.user.User;
+import com.dingding.seckill.user.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

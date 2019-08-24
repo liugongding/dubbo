@@ -27,7 +27,6 @@ spring:
 
 
 mybatis:
-  type-aliases-package: com.dingding.entity.user
   mapper-locations: classpath:mapper/*.xml
   configuration:
     # 使用jdbc的getGeneratedKeys 可以获取数据库自增主键值

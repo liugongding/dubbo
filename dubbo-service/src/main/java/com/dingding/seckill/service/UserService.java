@@ -1,6 +1,6 @@
-package com.dingding.service;
+package com.dingding.seckill.service;
 
-import com.dingding.entity.user.User;
+import com.dingding.seckill.user.User;
 
 import java.util.List;
 

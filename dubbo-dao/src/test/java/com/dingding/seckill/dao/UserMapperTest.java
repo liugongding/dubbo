@@ -1,6 +1,6 @@
-package com.dingding.dal.dao;
+package com.dingding.seckill.dao;
 
-import com.dingding.common.test.TestApplication;
+import com.dingding.seckill.test.TestApplication;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

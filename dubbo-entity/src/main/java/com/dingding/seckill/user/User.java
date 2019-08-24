@@ -1,4 +1,4 @@
-package com.dingding.entity.user;
+package com.dingding.seckill.user;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;

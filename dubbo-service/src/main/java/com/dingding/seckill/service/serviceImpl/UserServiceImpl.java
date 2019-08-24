@@ -1,8 +1,8 @@
-package com.dingding.service.serviceImpl;
+package com.dingding.seckill.service.serviceImpl;
 
-import com.dingding.dal.dao.UserMapper;
-import com.dingding.entity.user.User;
-import com.dingding.service.UserService;
+import com.dingding.seckill.dao.UserMapper;
+import com.dingding.seckill.user.User;
+import com.dingding.seckill.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

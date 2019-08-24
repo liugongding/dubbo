@@ -1,4 +1,4 @@
-package com.dingding.common.config;
+package com.dingding.seckill.config;
 
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
