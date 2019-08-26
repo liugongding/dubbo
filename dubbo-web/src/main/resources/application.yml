@@ -29,7 +29,7 @@ spring:
 
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
-#    time-zone: GMT+8
+    time-zone: GMT+8
 
 mybatis:
   type-aliases-package: com.dingding.seckill.user
@@ -41,3 +41,14 @@ mybatis:
     use-column-label: true
     # 开启驼峰命名转换，如：Table(create_time) -> Entity(createTime)。不需要我们关心怎么进行字段匹配，mybatis会自动识别`大写字母与下划线`
     map-underscore-to-camel-case: true
+
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    port: 20880
+    name: dubbo
+  scan:
+    base-packages: com.dingding.service.serviceImpl

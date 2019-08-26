@@ -1,9 +1,10 @@
 package com.dingding.seckill.service.serviceImpl;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.dingding.seckill.UserService;
 import com.dingding.seckill.dao.UserMapper;
 import com.dingding.seckill.user.User;
-import com.dingding.seckill.service.UserService;
-import org.springframework.stereotype.Service;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ import java.util.List;
  * @Date 2019-08-21
  */
 @Service
+@Slf4j
 public class  UserServiceImpl implements UserService {
 
     @Resource
@@ -45,7 +47,7 @@ public class  UserServiceImpl implements UserService {
     @Override
     public int updateUser(User user,Integer id) {
         user.setId(id);
-        System.out.println("service" + user);
+        log.info("User{}", user);
         return userMapper.updateUser(user);
     }
 }

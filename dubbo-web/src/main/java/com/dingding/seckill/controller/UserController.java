@@ -1,8 +1,8 @@
 package com.dingding.seckill.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.dingding.seckill.UserService;
 import com.dingding.seckill.user.User;
-import com.dingding.seckill.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    @Autowired
+    @Reference
     private UserService userService;
 
     @GetMapping("list")
@@ -41,8 +41,6 @@ public class UserController {
     @PutMapping(value = "/update/{id}")
     @CrossOrigin
     public String updateUserById(@RequestBody User user, @PathVariable("id") Integer id) {
-        System.out.println(id);
-        System.out.println(user);
         userService.updateUser(user,id);
         return "更新成功";
     }
